@@ -1,0 +1,84 @@
+body{
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+    
+    
+}
+
+.text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.form{
+   box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   width: 400px;
+   background-color: #f45863;
+   border-radius: 10px;
+
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.input::placeholder{
+    color: rgb(69, 69, 69);
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    border-color:lightgray ;
+    position: relative;
+}
+
+.list li .fa-trash{
+    color: rgb(101, 56, 250);
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li .fa-square-check{
+    color: rgb(80, 57, 251);
+    position: absolute;
+    right: 40px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked{
+    color: rgb(16, 16, 16);
+    text-decoration: line-through solid #0d0d0d;
+}
+
+.list li.checked .fa-square-check{
+    color: rgb(239, 235, 235);
+}
+
